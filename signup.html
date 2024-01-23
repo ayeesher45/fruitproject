@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d3c9fc67a3.js" crossorigin="anonymous"></script>
+   
+    <title>sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="bar">
+        <div class="logo">
+            <img src="fruitlogo.jpg" alt="">
+                <div>
+                    <h1>Halie&Ayeesha</h1>
+                </div>
+        </div>
+        <div class="barr"><i class="fa fa-bars">
+        </i></div>
+        <ul id="ul-mobile">
+            <li> <i class="fa fa-home"></i>
+            <a href="index.html">HOME</a>
+            </li>
+            <li><i class="fa fa-history"></i>
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li> <i class="fa fa-phone"></i>
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <li> <i class="fa-solid fa-shopping-basket"></i>
+                <a href="order.html">ORDER</a>
+            </li>
+        </ul>
+        <div class="searchcart">
+            <div class="fa fa-search" type="search" placeholder="search........">
+                </div>
+                <div class="fa fa-cart-shopping"></div>
+        </div>
+        </div>
+        </form>
+        </header>
+    <div class="form1">
+        <form method="post" action="">
+            <h1>SIGN-UP</h1><br>
+            <div class="info_content">
+                <label>Name: </label>
+                <input type="text" name="name"><br>
+            </div>
+            <div class="info_content">
+                <label>Username: </label>
+                <input type="text" name="name"><br>
+            </div>
+            <div class="info_content">
+                <label>password: </label>
+                <input type="password" name="names"><br>
+            </div>
+            <div class="info_content">
+                <label>Phone Number: </label>
+                <input type="text" name="age"><br>
+            </div>
+            <div class="info_content">
+                <label>Email: </label>
+                <input type="email" name="email"><br>
+            </div>
+            <div class="but1"><button> <a href="signin.html"> Sign-up</a></button>
+            </div>
+            <p>Already have an account? <a href="signin.html"> Sign-in</a></p>
+            </form>
+    </div>
+    <footer class="foot">
+        <div class="foot-bar">
+            <h1>Halie&Ayeesha Fruit</h1>
+        </div>
+        <div class="foot-box">
+            <div>
+                <h2>Links</h2>
+                    <p>
+                        <a href="#Sabishare">Sabishare</a>
+                        <a href="#Torizone">Torizone</a>
+                        <a href="#Pitakwa360">Pitakwa360</a>
+                    </p>
+            </div>
+                <div>
+                    <h2>Social Media</h2>
+                    <p>
+                        <a href="Facebook.com">Facebook</a>
+                        <a href="Twitter.com">Twitter</a>
+                        <a href="Instagram.com">Instagram</a>
+                        <a href="Telegram.com">Telegram</a>
+                    </p>
+                </div>
+                <div>
+                    <h2>Resources</h2>
+                    <p>
+                        <a href="signin.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#Advertise">Advertise</a>
+                        <a href="#Privacy Policy">Privacy Policy</a>
+                        <a href="#DMCA Takedown">DMCA Takedown</a>
+                </p>
+                </div>
+        </div> 
+        <div class="copyright">
+            <p>Copyright&copy;2023</p> 
+        </div>  
+        </footer>
+        <script>
+
+            let bars = document.querySelector(".bar");
+                let ul = document.querySelector("#ul-mobile");
+                let aysha = true;
+                bars.addEventListener("click",()=>{
+                if(!!aysha){
+                    ul.style.height="145px";
+                    aysha = false;
+                }else{
+                    ul.style.height="0px";
+                    aysha = true;
+                }
+                });
+                </script>
+</body>
+</html>

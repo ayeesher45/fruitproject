@@ -1,0 +1,1451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   scroll-behavior: smooth;
+   scroll-padding-top: 7rem;
+}
+.bar{
+    background-color:white ;
+    box-shadow: .3em .3em .3em .2em rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    height: 80px;
+    align-items: center;
+
+}
+.logo img{
+width: 20%;
+height: 30%;
+border-radius: 50%;
+}
+.logo i{
+   color:green;
+   font-size: 4rem;
+}
+#itemcount{
+    font-size: 12px;
+    padding-left:px;
+}
+#h3{
+    color: green;
+}
+.logo h1{
+    color:green;
+    font-size: 1.5rem;
+    font-style: oblique; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 15px;
+}
+i.fa-bars{
+   font-size:25px;
+   padding:20px;
+   padding-left: 0;
+   transition:.1s;
+   display: none;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.1rem;
+    justify-content:center;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 150px;
+}
+ul li i {
+    color: green;
+    
+}
+ul li a{
+color:green;
+text-decoration: none;
+}
+a:hover{
+    color: rgb(29, 151, 29);
+    text-decoration: overline;
+}
+.bar .searchcart{
+   margin-right: 12px;
+}
+.bar .searchcart div{
+   background-color:green;
+   color: white;
+   font-size: 1rem;
+   padding: 8px;
+}
+.nav-bar{
+    background-size: cover;
+    background-color: aliceblue;
+    background-image: url(fruithome3.jpg);
+
+}
+.nav-box{
+    background-color: rgba(43, 180, 71, 0.164);
+}
+.nav-box h1{
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: oblique;
+    font-smooth: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(42, 78, 42);
+    text-align: center;
+}
+.nav-info p{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, 
+     sans-serif;
+     text-align: center;
+     font-size: 12px;
+     color: rgb(1, 56, 1);
+}
+.slide{
+    padding: 0;
+    margin-bottom: 0;
+    background-color: rgba(121, 167, 52, 0.6)  ;
+    color: white;
+    text-align: center;
+}
+.order{
+    background-color: rgb(121, 167, 52) ;
+    color: white;
+    font-weight:100%;
+    font-size: 2.5rem;
+    margin: 2rem 2rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.grid-img img{
+    width: 150px;
+    height:150px;
+    border-radius: 100px;  
+}
+.grid-img{
+    display: grid;
+    grid-template-columns:100px 100px 100px;
+    justify-content: center;
+    margin-bottom:30px;
+    column-gap: 1rem;
+}
+
+.head_bar{
+background-color:rgb(121, 167, 52) ;
+}
+.head-box img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+    transition:0.6s;
+    }
+.head-box img:hover{
+    transform: scale(1.2);
+}
+.head-box {
+    margin-top: 20px;
+    background-color:white;
+    display: grid;
+grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    column-gap: 5em;
+    row-gap: 3.1px;
+    justify-content:center ;
+    padding: 50px 5px;
+}
+.name{
+    color:rgb(78, 110, 28) ;
+    font-size: larger;
+}
+.name button{
+    font-weight: bold;
+    color: white;
+    padding: 9px;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    background-color:rgb(121, 167, 52) ;
+    border-color:rgb(180, 214, 180) ;
+    transition: transform 0.4s;
+}
+.name button:hover{
+   transform: scale(1.1);
+}
+
+.order2 {
+    background-color:rgba(121, 167, 52, 0) ;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(121, 167, 52)  ;
+    text-align: center;
+    margin: 2rem 2rem;
+}
+.foot{
+    background-color:rgb(242, 252, 227) ;
+    margin-top: 1rem; 
+   
+}
+.foot-bar h1{
+color:rgb(17, 22, 8) ;
+font-size: xx-large;
+font-weight: 500rem;
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.foot-box{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 5rem;
+}
+.foot h2{
+    color:rgb(9, 43, 9);
+    font-weight:300rem;
+    font-size: 30px;
+}
+.foot p{
+    color: rgb(27, 17, 17);
+    display: flex;
+    flex-direction: column;
+}
+.foot p a{
+    color:rgb(48, 35, 35) ;
+    font-weight: lighter;
+ }
+ .copyright p{ 
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+ }
+ .navbar{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(fruithome9.jpg);
+    animation-name: myanime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    padding: 5% 4%;
+   column-gap: 1rem;
+   margin: 0.5rem 0;
+   
+ }
+ @keyframes myanime {
+    0%{background-image: url(fruithome9.jpg);}
+    25%{background-image: url(fruithome6.png);}
+    50%{background-image: url(fruithome5.jpg);}
+    75%{background-image: url(fruithome8.webp);}
+    100%{background-image: url(fruithome9.jpg);}
+ }
+ .but button{
+    padding: 15px;
+    background-color:rgba(47, 85, 27, 0.7) ;
+    font-weight: bold;
+    border-radius: 1rem;
+    border-color:rgb(124, 155, 124) ;
+    margin: 20px;
+ }
+ .but button a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+ }
+ .navi-bar img{
+    width: 70%;
+    height: 100%;
+    object-fit:contain;
+ }
+ .bar1{
+    background-color: rgba(37, 37, 37,0.18);
+    width: 100%;
+    height: 80%;
+   text-align: center;
+    padding: 40px;
+ }
+ .bar1 h1{
+    font-size: 3rem;
+    color:rgb(3, 31, 3) ;
+ }
+ .bar1 p{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+ }
+ .ad{
+    background-color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+ }
+.ad h2{
+    font-size: 1.3rem;
+    color:rgb(121, 167, 52);
+}
+ .ad img{
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 25px;
+ }
+ .ad button{
+        background-color:rgb(121, 167, 52) ;
+        font-weight: bold;
+        color: white;
+        padding: 9px;
+        margin-top: 0.5rem;
+        border-radius: 1rem;
+        border-color:rgb(224, 230, 224);
+        transition: transform 0.4s;
+    }
+.ad button:hover{
+       transform: scale(1.1);
+    }
+ .ad1{
+    box-sizing: border-box;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    background-color:white;
+    padding:80px;
+    height: 50%;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 60px;
+    transform:rotateZ(-5deg), translateX(500px);
+    transition: all 5s 1s cubic-bezier(0,1,.3,1);
+    width: 400px;
+    z-index: 10px;
+    transform: rotateZ(5deg) translateX(50px);
+    transition: transform 0.4s;
+
+ }
+ .ad1:hover{
+    transform:rotateY(360deg) scale(1.1);
+ }
+ .ad2{
+    box-sizing: border-box;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    background-color:white;
+    padding:80px;
+    margin-top: 5rem;
+    height: 50%;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 60px;
+    transform:rotateZ(-5deg), translateX(500px);
+    transition: all 5s 1s cubic-bezier(0,1,.3,1);
+    width: 400px;
+    z-index: 10px;
+    transform: rotateZ(5deg) translateX(50px);
+    transition: transform 0.4s;
+ }
+ .ad2:hover{
+    transform:rotateY(360deg) scale(1.1);
+    
+ }
+ .ad3{
+    box-sizing: border-box;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    background-color:white;
+    padding: 80px;
+    padding-top:-80rem;
+    margin-top: 12rem;
+    height: 50%;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 60px;
+    transform:rotateZ(-5deg), translateX(500px);
+    transition: all 5s 1s cubic-bezier(0,1,.3,1);
+    width: 400px;
+    z-index: 10;
+    transform: rotateZ(5deg) translateX(50px);
+    transition: transform 0.4s;
+ }
+ .ad3:hover{
+    transform:rotateY(360deg) scale(1.1);
+ }
+ .ad4{
+    box-sizing: border-box;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    background-color:white;
+    padding:80px;
+    height: 50%;
+    border-radius: 60px;
+    transform:rotateZ(-5deg), translateX(500px);
+    transition: all 5s 1s cubic-bezier(0,1,.3,1);
+    width: 400px;
+    z-index: 10px;
+
+ }
+ .home{
+    font-size: 3rem;
+    color:rgb(58, 80, 26) ;
+    text-align: center;
+    margin-top: 2rem;
+ }
+ .head{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 80px;
+    margin-top: 6rem;
+    column-gap: 3rem;
+ }
+ .headbar{
+    height: 80%;
+    box-shadow: 1em 1em 1em .25em rgba(0,0,0,.2);
+    background-image: url(fruithome5.jpg);
+    background-size: cover;
+    color: white;
+    align-items: center;
+    position:relative;
+    animation-name: myanimes;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes myanimes {
+    0%{background-image: url(fruithome5.jpg);}
+    25%{background-image: url(fruithome4.jpg);}
+    50%{background-image: url(fruithome3.jpg);}
+    75%{background-image: url(fruithome2.jpg);}
+    100%{background-image: url(fruithome5.jpg);}
+ }
+.headbar h1{
+    font-size: 5rem;
+}
+.headbar p{
+    font-size: 1.2rem;
+}
+ .headbar1 img{
+    width:80% ;
+    height: 90%;
+    object-fit: contain;
+ }
+ .headbar1{
+    height:50%;
+ }
+ .headbar2 img{
+    width: 100%;
+ }
+ .headbar2{
+    height: 90%;
+    box-shadow: 1em 1em 1em .25em rgba(0,0,0,.2);
+    background-color:rgb(121, 167, 52);
+    color: white;
+    font-size: 1.4rem;
+    font-style: oblique;
+ }
+ .mainbar{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+ }
+ .main1{
+    width:130%;
+    padding: 15rem;
+    background-image: url(fruithome3.jpg);
+    background-size:cover;
+ }
+ .main1 h1{
+    font-size: 4rem;
+    color: white;
+ }
+ .mainbar p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(121, 167, 52);
+ }
+ .main2 h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(86, 116, 43)  ;
+    text-align: center;
+    margin: 2rem 2rem;
+ }
+/*signin*/
+
+.form1{
+    width: 100%;
+    height: 41rem;
+    background-image: url(fruithome7.jpg);
+    background-size: cover;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin-top: 1.5rem;
+  }
+  form{
+    width: 50%;
+    height: 60vh;
+    margin-top: 2rem;
+    margin-left: 30rem;
+    padding-top: 1.5rem;
+    background-color:rgba(58, 97, 57, 0.3);
+  display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+ }
+ .form1 h1{
+    color: white;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2.3rem;
+ }
+ .form1 p{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+ }
+ .form1 p a{
+    color: rgb(168, 218, 168);
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: rgb(18, 71, 14);
+    padding: .5rem;
+    border-radius:1rem;
+ }
+ .form1 p a:hover{
+    transform: scale(1.2);
+ }
+ 
+ .info_content
+ {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+    
+    
+ }
+ 
+ .info_content label
+ {
+    width: 17%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+ }
+ 
+ 
+ .info_content input
+ {
+    width: 60%;
+    height: 80%;
+    border-radius: 1em;
+    border: none;
+    padding: 9px;
+    outline: none;
+    background-color: white;
+    color:black;
+    font-size: 1rem;
+    font-weight: 100%;
+ }
+ .sign{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
+    justify-content: space-around;
+    margin: 2rem 2rem;
+    margin-bottom: 4rem;
+ }
+ .sign .nav-box{
+    background-color: white;
+ }
+ .sign .nav-box h1{
+    font-size: 3rem;
+ }
+ .sign .nav-box p{
+    color: rgb(5, 54, 13);
+ }
+ .signin{
+    background-image: url(fruithome2.jpg);
+    background-size: cover;
+    width: 60%;
+    height: 30%;
+ 
+ }
+ .signin form {
+    width: 60%;
+    height: 50vh;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    padding-top: 1.5rem;
+    background-color:rgba(58, 97, 57, 0.3);
+  display: flex;  
+  align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+ }
+ .signin h1{
+    color: white;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2.3rem;
+ }
+ .signin .info_content input
+ {
+    width: 70%;
+    height: 40%;
+    border-radius: 1em;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    background-color: white;
+    color:black;
+    font-size: 1rem;
+    font-weight: 100%;
+    margin-left: 3rem;
+ }
+ .but1 button{
+    margin-bottom: 2rem;
+    padding: 15px 15px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgba(39, 77, 44, 0.8);
+    border-radius: 2rem;
+    
+  }
+  .but1 a{
+    color: white;
+    text-decoration: none;
+    font-size:1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+ .image img{
+    width:100%;
+    height: 20rem;
+    object-fit: cover;
+    background-size: cover;
+    margin-top: 1rem;
+ }
+ .image h1{
+    font-size: 4rem;
+    font-weight:bolder;
+    color: rgb(9, 77, 9);
+    margin-top: -2.5rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:overline underline;
+ }
+ .images img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    margin-top: 2rem;
+ }
+ .contact{
+    width:100%;
+    height:100%;
+    background-color: rgb(243, 248, 242);
+    background-size: cover;
+    object-fit: fill;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ }
+ .cont h1{
+    color:rgb(17, 66, 17);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 1rem;
+ }
+ .cont p{
+    color: rgb(7, 58, 7);
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow'
+    , Arial, sans-serif;
+    font-weight:bolder;
+    margin-left: 3rem;
+    
+    
+ }
+ @media only screen and (max-width:768px) {
+   i.fa-bars{
+      font-size:15px;
+      padding:20px;
+      transition:.1s;
+      display: block;
+      margin-left: 40px;
+  }
+  i.fa-bars:active{
+      background:rgba(255,255,255,.2);
+  }
+  #ul-mobile{
+   width:130px;
+   height:0;
+   overflow:hidden;
+   background:#60bb67;
+   text-align:center;
+   color:#fefefe;
+   transition:.4s;
+   position: absolute;
+   padding:0 20px;
+   margin: 11rem 10rem 0 17.6rem;
+}
+   .bar{
+      background-color:white ;
+      box-shadow: .2em .2em .2em .1em rgba(0,0,0,.2);
+      height: 30px;
+  
+  }
+  .logo img{
+  width: 10%;
+  height: 13%;
+  border-radius: 30%;
+  }
+  #itemcount{
+      font-size: 6px;
+      padding-left:px;
+  }
+  #h3{
+      color: green;
+  }
+  .logo h1{
+      color:green;
+      font-size: .9rem;
+      font-style: oblique; 
+  }
+  .logo{
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      margin: 5px;
+  }
+  ul{
+   display:inline;
+   justify-content:space-between;
+   align-items: center;
+   font-size: 12px;
+   padding-right:0px;
+}
+  ul li i {
+   padding:0px;
+   color: green;
+      
+  }
+  ul li{
+   list-style-type:none;
+    transition:.2s;
+    padding:7px;
+
+  }
+  ul  li:hover{
+   background:rgba(255,255,255,.3);
+   scale:0.9;
+   border-radius: 10px;
+}
+  ul li a{
+  color:green;
+  text-decoration: none;
+  }
+  a:hover{
+      color: rgb(29, 151, 29);
+      text-decoration: overline;
+  }
+  .bar .searchcart{
+     margin-right: 12px;
+     display: flex;
+
+  }
+  .bar .searchcart div{
+     background-color:green;
+     color: white;
+     font-size: .6rem;
+     margin: 4px;
+     padding: 5px;
+  }
+  /*.search-form{
+     position: absolute;
+     top: 110%;
+     margin-left: -50rem;
+     width: 30rem;
+     height: 4rem;
+     background-color:white;
+     border-radius: .5rem;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     box-shadow: var(--box-shadow);
+  }
+  .search-form input{
+     height: 100%;
+     width: 100%;
+     background: none;
+     text-transform: none;
+     font-size: 1.2rem;
+     color: #130f40;
+     padding: 0 1.5rem;
+  }
+  .search-form label{
+     font-size: 1.9rem;
+     padding-left: 1rem;
+     color: #130f40;
+     cursor: pointer;
+  }
+  .search-form label:hover{
+     color:limegreen;
+  }*/
+  .nav-bar{
+      background-size:auto;
+      background-color: aliceblue;
+      background-image: url(fruithome3.jpg);
+  
+  }
+  .nav-box{
+      background-color: rgba(43, 180, 71, 0.164);
+  }
+  .nav-box h1{
+      font-size: 20px;
+      font-weight: bolder;
+      font-style: oblique;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(42, 78, 42);
+      text-align: center;
+  }
+  .nav-info p{
+      margin-top: 3px;
+      padding: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: italic;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       color: rgb(1, 56, 1);
+  }
+  .slide{
+      padding: 0;
+      font-size: 10px;
+      margin-bottom: 0;
+      background-color: rgba(121, 167, 52, 0.6)  ;
+      color: white;
+      text-align: center;
+  }
+  .order{
+      background-color: rgb(121, 167, 52) ;
+      color: white;
+      font-weight:100%;
+      font-size: 1rem;
+      margin: 1rem 1rem;
+      padding: 0.4rem;
+      border-radius: 2rem;
+      text-align: center;
+      box-shadow: .2em .2em .2em .1em rgba(0,0,0,.2);
+  }
+  .grid-img img{
+      width: 60px;
+      height:60px;
+      border-radius: 100px;  
+  }
+  .grid-img{
+      display: grid;
+      grid-template-columns:100px 100px 100px;
+      margin-bottom:15px;
+  }
+  
+  .head_bar{
+  background-color:rgb(121, 167, 52) ;
+  }
+  .head-box img{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+      transition:0.6s;
+      }
+  .head-box img:hover{
+      transform: scale(1.2);
+  }
+  .head-box {
+      background-color:white;
+      display: grid;
+  grid-template-columns: 150px 150px ;
+      column-gap: 5em;
+      row-gap: 25px;
+      justify-content:center ;
+  }
+  .name{
+      color:rgb(78, 110, 28) ;
+      padding: 12px;
+      font-size: .8rem;
+      box-shadow: .2em .2em .2em .1em rgba(0,0,0,.2);
+      border-radius: .6rem;
+  }
+  .name button{
+      font-weight: bold;
+      color: white;
+      padding: 2px;
+      font-size: 10px;
+      margin-top: 0.5rem;
+      border-radius: 1rem;
+      background-color:rgb(121, 167, 52) ;
+      border-color:rgb(180, 214, 180) ;
+      transition: transform 0.4s;
+  }
+  .name button:hover{
+     transform: scale(1.1);
+  }
+  
+  .order2 {
+      background-color:rgba(121, 167, 52, 0) ;
+      font-size: .7rem;
+      font-weight: bold;
+      font-style: italic;
+      color:rgb(121, 167, 52)  ;
+      text-align: center;
+      
+  }
+  .foot{
+      background-color:rgb(242, 252, 227) ;
+      margin-top: 1rem; 
+     
+  }
+  .foot-bar h1{
+  color:rgb(17, 22, 8) ;
+  font-size: 1.2rem;
+  font-weight: 50rem;
+      display:flex;
+      justify-content: center;
+      padding-top: 20px;
+  }
+  .foot-box{
+      display: flex;
+      justify-content:space-around;
+      padding-top: 6px;
+      padding-bottom: 10px;
+      gap: 5rem;
+  }
+  .foot h2{
+      color:rgb(9, 43, 9);
+      font-weight:30rem;
+      font-size: 15px;
+  }
+  .foot p{
+      color: rgb(27, 17, 17);
+      display: flex;
+      font-size: 11px;
+      flex-direction: column;
+  }
+  .foot p a{
+      color:rgb(48, 35, 35) ;
+      font-weight: lighter;
+   }
+   .copyright p{ 
+      color:black;
+      font-size: 15px;
+      font-weight: bold;
+      align-items: center;
+   }
+   .navbar{
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      background-image: url(fruithome9.jpg);
+      animation-name: myanime;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      margin-bottom: 15px;
+   }
+   @keyframes myanime {
+      0%{background-image: url(fruithome9.jpg);}
+      25%{background-image: url(fruithome6.png);}
+      50%{background-image: url(fruithome5.jpg);}
+      75%{background-image: url(fruithome8.webp);}
+      100%{background-image: url(fruithome9.jpg);}
+   }
+   .but button{
+      padding: 2px;
+      background-color:rgba(47, 85, 27, 0.7) ;
+      font-weight: bold;
+      border-radius: 1rem;
+      border-color:rgb(124, 155, 124) ;
+      margin: 8px;
+   }
+   .but button a{
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-size: 9px;
+   }
+   .navi-bar img{
+      width: 70%;
+      height: 100%;
+      object-fit:contain;
+   }
+   .bar1{
+      background-color: rgba(37, 37, 37,0.18);
+      width: 100%;
+      height: 80%;
+     text-align: center;
+      padding: 0px;
+   }
+   .bar1 h1{
+      font-size: 1.6rem;
+      color:rgb(3, 31, 3) ;
+   }
+   .bar1 p{
+      font-size: .7rem;
+      font-style: italic;
+      font-weight: bolder;
+      color: white;
+   }
+   .ad{
+      background-color:white;
+      display:block;
+      
+   }
+  .ad h2{
+      font-size: 1rem;
+      color:rgb(121, 167, 52);
+  }
+   .ad img{
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 0px;
+   }
+   .ad button{
+          background-color:rgb(121, 167, 52) ;
+          font-weight: bold;
+          font-size: .6rem;
+          color: white;
+          padding: 4px;
+          margin-top: 0.5rem;
+          border-radius: 1rem;
+          border-color:rgb(224, 230, 224);
+          transition: transform 0.4s;
+      }
+  .ad button:hover{
+         transform: scale(1.1);
+      }
+   .ad1{
+      box-sizing: border-box;
+      box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+      background-color:white;
+      padding:40px;
+      height: 50%;
+      transition-property: transform;
+      transition-duration: 2s;
+      border-radius: 60px;
+      transform:rotateZ(-5deg), translateX(500px);
+      transition: all 5s 1s cubic-bezier(0,1,.3,1);
+      width: 50%;
+      z-index: 10px;
+      transform: rotateZ(5deg) translateX(50px);
+      transition: transform 0.4s;
+      margin-left: 70px;
+  
+   }
+   .ad1:hover{
+      transform:rotateY(360deg) scale(1.1);
+   }
+   .ad2{
+      box-sizing: border-box;
+      box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+      background-color:white;
+      padding:40px;
+      height: 100%;
+      transition-property: transform;
+      transition-duration: 2s;
+      border-radius: 60px;
+      transform:rotateZ(-5deg), translateX(500px);
+      transition: all 5s 1s cubic-bezier(0,1,.3,1);
+      width: 50%;
+      z-index: 10px;
+      transform: rotateZ(5deg) translateX(50px);
+      transition: transform 0.4s;
+      margin-left: 70px;
+      margin-top: 25px;
+   }
+   .ad2:hover{
+      transform:rotateY(360deg) scale(1.1);
+      
+   }
+   .ad3{
+      box-sizing: border-box;
+      box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+      background-color:white;
+      padding:40px;
+      height: 0%;
+      transition-property: transform;
+      transition-duration: 2s;
+      border-radius: 60px;
+      transform:rotateZ(-5deg), translateX(500px);
+      transition: all 5s 1s cubic-bezier(0,1,.3,1);
+      width: 50%;
+      z-index: 10px;
+      transform: rotateZ(5deg) translateX(50px);
+      transition: transform 0.4s;
+      margin-left: 70px;
+      margin-top: 25px;
+   }
+   .ad3:hover{
+      transform:rotateY(360deg) scale(1.1);
+   }
+   .ad4{
+      box-sizing: border-box;
+      box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+      background-color:white;
+      padding:40px;
+      height: 30%;
+      border-radius: 60px;
+      transform:rotateZ(-5deg), translateX(500px);
+      transition: all 5s 1s cubic-bezier(0,1,.3,1);
+      width: 200px;
+      z-index: 10px;
+      margin-left: 100px;
+      margin-bottom: 10px;
+  
+   }
+   .home{
+      font-size: 1.5rem;
+      color:rgb(58, 80, 26) ;
+      text-align: center;
+      margin-top: .3rem;
+   }
+   .head{
+      background-color: white;
+      display:block;
+      margin: 0 50px;
+      margin-top: 3rem;
+   }
+   .headbar{
+      height: 40%;
+      box-shadow: 1em 1em 1em .25em rgba(0,0,0,.2);
+      background-image: url(fruithome5.jpg);
+      background-size: cover;
+      color: white;
+      align-items: center;
+      position:relative;
+      animation-name: myanimes;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+   }
+   @keyframes myanimes {
+      0%{background-image: url(fruithome5.jpg);}
+      25%{background-image: url(fruithome4.jpg);}
+      50%{background-image: url(fruithome3.jpg);}
+      75%{background-image: url(fruithome2.jpg);}
+      100%{background-image: url(fruithome5.jpg);}
+   }
+  .headbar h1{
+      font-size: 2rem;
+  }
+  .headbar p{
+      font-size: 1rem;
+  }
+   .headbar1 img{
+      width:40% ;
+      height: 450%;
+      object-fit: contain;
+      box-shadow: .2em .2em .2em .2em rgba(0,0,0,.2);
+      
+   }
+   .headbar1{
+      height:30%;
+   }
+   .headbar2 img{
+      width: 100%;
+   }
+   .headbar2{
+      height: 30%;
+      width: fit-content;
+      box-shadow: .2em .2em .2em .2em rgba(0,0,0,.2);
+      background-color:white;
+      color: green;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-style: oblique;
+      margin-top: 25px;
+   }
+   .mainbar{
+      margin: 10px 0;
+      display:block;
+      align-items: center;
+   }
+   .main1{
+      width: 100%;
+      padding: 7rem;
+      background-image: url(fruithome3.jpg);
+      background-size:cover;
+   }
+   .main1 h1{
+      font-size: 2rem;
+      color: white;
+   }
+   .mainbar p{
+      font-size: .8rem;
+      text-align:center;
+      color:green ;
+      font-style: italic;
+      font-weight: bold;
+   }
+   .main2 h1{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color:rgb(86, 116, 43)  ;
+      text-align: center;
+      margin: 1rem 1rem;
+   }
+  /*signin*/
+  
+  .form1{
+      width: 100%;
+      height: 21rem;
+      background-image: url(fruithome7.jpg);
+      background-size: cover;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 0;
+    }
+    form{
+      width: 80%;
+      height: 90%;
+      background-color:rgba(58, 97, 57, 0.3);
+      display: block;  
+      margin-left: 10px;
+      margin: 0;
+      padding: 0;
+   }
+   .form1 h1{
+      color: white;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      font-size: 1rem;
+      text-align: center;
+   }
+   .form1 p{
+      color: white;
+      font-size: .8rem;
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 2rem;
+   }
+   .form1 p a{
+      color: rgb(168, 218, 168);
+      font-size: .7rem;
+      text-decoration: none;
+      background-color: rgb(18, 71, 14);
+      padding: .4rem;
+      border-radius:1rem;
+   }
+   .form1 p a:hover{
+      transform: scale(1.2);
+   }
+   
+   .info_content
+   {
+      width: 80%;
+    height: 35px;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+
+   }
+   
+   .info_content label
+   {
+      width: 8%;
+      font-size: 13px;
+      font-weight: bold;
+      color: white;
+   }
+   
+   
+   .info_content input
+   {
+      width: 80%;
+      height: 25%;
+      border-radius: 1em;
+      border: none;
+      margin-left: 50px;
+      background-color: white;
+      color:black;
+      font-size: .7rem;
+      font-weight: 100%;
+   }
+   .sign{
+      display:block ;
+      flex-direction: row;
+      row-gap: 0rem;
+      justify-content:center ;
+      margin: 1rem 1rem;
+      margin-bottom: 1rem;
+   }
+   .sign .nav-box{
+      background-color: white;
+   }
+   .sign .nav-box h1{
+      font-size: 1.5rem;
+   }
+   .sign .nav-box p{
+      color: rgb(5, 54, 13);
+   }
+   .signin{
+      background-image: url(fruithome2.jpg);
+      background-size:auto;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 250px;
+      margin: 10px;
+   
+   }
+   .signin form {
+      width: 100%;
+      height: 27vh;
+      margin-left: 0rem;
+      background-color:rgba(58, 97, 57, 0.3);
+      margin: 0;
+      padding: 0;
+   }
+   .signin h1{
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      font-size: 1.2rem;
+      margin-top: 60px;
+   }
+   .signin .info_content input
+   {
+      width: 70%;
+      height: 40%;
+      border-radius: 1em;
+      border: none;
+      padding-left: 20px;
+      outline: none;
+      background-color: white;
+      color:black;
+      font-size: .7rem;
+      font-weight: 100%;
+      margin-left: 3rem;
+   }
+   .but1 button{
+      margin-bottom: 2rem;
+      padding: 5px 5px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      background-color: rgba(39, 77, 44, 0.8);
+      border-radius: 2rem;
+      
+    }
+    .but1 a{
+      color: white;
+      text-decoration: none;
+      font-size:.8rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+   .image img{
+      width:100%;
+      height: 10rem;
+      object-fit: cover;
+      background-size: cover;
+      margin-top: 1rem;
+   }
+   .image h1{
+      font-size: 2rem;
+      font-weight:bolder;
+      color: rgb(9, 77, 9);
+      margin-top: -1.5rem;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration:overline underline;
+   }
+   .images img{
+      width: 50%;
+      height:50%;
+      object-fit: contain;
+      margin-top: 1rem;
+      margin-left: 100px;
+   }
+   .contact{
+      width:100%;
+      height:100%;
+      background-color: rgb(243, 248, 242);
+      background-size: cover;
+      object-fit: fill;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: .5rem;
+      margin: 0;
+      padding: 0;
+   }
+   .cont h1{
+      color:rgb(17, 66, 17);
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      font-size: 1rem;
+      margin: 1rem;
+   }
+   .cont p{
+      color: rgb(7, 58, 7);
+      font-size: .7rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow'
+      , Arial, sans-serif;
+      font-weight:bolder;
+      
+   }
+
+
+ }
+
+ @media (max-width:300px) {
+    body{
+        min-width: 200px;
+    }
+    .bar{
+        min-width: 200px;
+    }
+    .nav-bar{
+        min-width: 200px;
+    }
+    .head_bar{
+        min-width: 200px;
+    }
+    .foot{
+        min-width: 200px;
+    }
+    
+
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
