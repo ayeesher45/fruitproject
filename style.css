@@ -236,7 +236,6 @@ font-weight: 50rem;
     margin: 0;
  }
  .navbar{
-    background-size: cover;
     width: 100%;
     height: 100%;
     background-image: url(fruithome9.jpg);
@@ -714,18 +713,19 @@ font-weight: 50rem;
     
  }
  @media only screen and (max-width:700px) {
-   i.fa-bars{
+.barr .fa-bars{
       font-size:15px;
       padding:20px;
       transition:.1s;
       display: block;
+      width: fit-content;
       margin-left: 40px;
   }
   i.fa-bars:active{
       background:rgba(255,255,255,.2);
   }
   #ul-mobile{
-   width:120px;
+   width:130px;
    height:0;
    overflow:hidden;
    background:#60bb67;
@@ -734,7 +734,7 @@ font-weight: 50rem;
    transition:.4s;
    position: absolute;
    padding:0 20px;
-   margin: 11rem 10rem 0 16rem;
+   margin: 11rem 10rem 0 15rem;
 }
    .bar{
       background-color:white ;
@@ -743,7 +743,7 @@ font-weight: 50rem;
   
   }
   .logo img{
-  width: 10%;
+  width: 12%;
   height: 13%;
   border-radius: 30%;
   }
@@ -757,6 +757,7 @@ font-weight: 50rem;
   .logo h1{
       color:green;
       font-size: .9rem;
+      margin-left: 0;
       font-style: oblique; 
   }
   .logo{
@@ -850,12 +851,12 @@ font-weight: 50rem;
 .nav-info p{
     margin-top: 5px;
     padding: 8px;
-    font-size: 12px;
+    font-size: 9px;
 }
 .slide{
    margin-bottom: 10px;
    padding: 0;
-    font-size: .7rem;
+    font-size: .6rem;
 }
 .order{
    width: 50%;
@@ -867,8 +868,8 @@ font-weight: 50rem;
     border-radius: 2rem;
 }
 .grid-img img{
-    width: 50px;
-    height:50px;
+    width: 60px;
+    height:60px;
     border-radius: 100px; 
 }
 .grid-img{
@@ -908,10 +909,10 @@ grid-template-columns: 150px 150px ;
     border-radius: 1rem;
 }
 .name h3 {
-   font-size: 1rem;
+   font-size: .9rem;
 }
 .name h4 {
-   font-size: .9rem;
+   font-size: .8rem;
 }
 .name button{
     padding: 4px;
@@ -966,13 +967,13 @@ font-size:1.2em;
     padding:5px;
  }
  .bar1 p{
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: bolder;
     padding:3px;
  }
  .ad{
     display:block;
-    padding: 4px;
+    padding: 3px;
  }
 .ad h2{
     font-size: .9rem;
@@ -986,36 +987,37 @@ font-size:1.2em;
         font-size: .6rem;
     }
  .ad1{
-    padding:80px;
+    padding:70px;
     height: 50%;
-    width: 250px;
-    margin-left: 60px;
+    width: 230px;
+    margin-left: 50px;
     margin-top: 20px;
  }
  
  .ad2{
-   padding:80px;
+   padding:70px;
    height: 50%;
    margin-top: 60px;
-   width: 250px;
-   margin-left: 60px;
+   width: 230px;
+   margin-left: 50px;
 }
  .ad3{
+   padding: 70px;
     margin-top:60px;
     height: 50%;
-    width: 250px;
-    margin-left: 60px;
+    width: 230px;
+    margin-left: 50px;
  }
  .ad4{
-    padding:80px;
+    padding:70px;
     height: 50%;
-    width: 280px;
+    width: 260px;
     margin: 20px;
-    margin-left: 60px;
+    margin-left: 80px;
  }
  .home{
     font-size: 1.3rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
  }
  .head{
     background-color: white;
@@ -1025,11 +1027,11 @@ font-size:1.2em;
     margin-top: 4rem;
  }
 .headbar h1{
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 10px;
 }
 .headbar p{
-    font-size: .9rem;
+    font-size: .7rem;
     padding: 15px;
 }
  .headbar1 img{
@@ -1043,7 +1045,7 @@ font-size:1.2em;
     width: 100%;
  }
  .headbar2{
-    font-size: 1rem;
+    font-size: .8rem;
     padding: 12px;
  }
  .mainbar{
@@ -1064,12 +1066,12 @@ font-size:1.2em;
    width: 100%;
  }
  .main2 h1{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0;
  }
  .main2 p{
    color:rgb(121, 167, 52);
-   font-size: .9rem;
+   font-size: .6rem;
    text-align: justify;
    padding: 20px;
  }
@@ -1079,12 +1081,12 @@ font-size:1.2em;
    margin-top: 3rem;
  }
  .main3 h1{
-   font-size: 1.5rem;
+   font-size: 1rem;
    margin-bottom: 0;
 }
 .main3 p{
   color:rgb(121, 167, 52);
-  font-size: 15px;
+  font-size:.6rem;
   text-align:justify;
   padding: 30px;
 }
@@ -1098,52 +1100,59 @@ font-size:1.2em;
   }
   form{
     width: 100%;
-    height: 45vh;
-    margin-top:0;
+    height: 40vh;
+    margin-top:15px;
     margin-left: 0;
-    padding-top:0;   
+    padding-top:0; 
+    padding: 20px;  
  }
  .form1 h1{
    margin-bottom: 0;
-   margin-top:  0; 
-   padding-top: 90px;
-    font-size: 1.4rem;
+   margin-top:  12px; 
+   padding-top: 50px;
+    font-size: 1.2rem;
  }
  .form1 p{
     color: white;
-    font-size: .9rem;
-    margin-bottom:20px;
+    font-size: .6rem;
+    margin-bottom:0;
     padding-bottom: 4rem;
  }
  .form1 p a{
-    padding: .3rem;
+    padding: .2rem;
+    font-size: .6rem;
  }
  .info_content
  {
     display: flex;
-    margin-bottom:8px;
+    margin-bottom:0px;
  }
  
  .info_content label
  {
     width: 49%;
-    font-size: 15px;
+    font-size: 12px;
  }
  .info_content input
  {
     width: 70%;
-    height: 70%;
+    height: 60%;
  }
  .sign{
     display:block;
     row-gap: 1rem;
     margin: 1rem 1rem;
  }
+ .signin{
+   width: 30%;
+   height: 20%;
+
+}
  .sign .nav-box h1{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
  }
  .sign .nav-box p{
-    font-size: .8rem;
+    font-size: .7rem;
  }
  .signin{
     width: 100%;
@@ -1156,7 +1165,7 @@ font-size:1.2em;
     margin-left:0;
  }
  .signin h1{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
    margin-bottom: -20px;
  }
  .signin .info_content {
@@ -1165,22 +1174,24 @@ font-size:1.2em;
  .signin .info_content input
  {
     width: 70%;
-    height: 32%;
+    height: 30%;
     font-size: .9rem;
     margin-left:0;
  }
  .signin .info_content label{
-   font-size: 1.1rem;
+   font-size: .9rem;
+   padding: 15px;
+   margin: 0;
  }
  .but1 button{
    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 5px 5px;
-    font-size: .6rem;
+    font-size: .5rem;
   }
  
   .but1 a{
-    font-size:.9rem;
+    font-size:.6rem;
   }
  .image img{
     width:100%;
@@ -1204,11 +1215,11 @@ font-size:1.2em;
     padding: 1rem;
  }
  .cont h1{
-    font-size: 1rem;
+    font-size: .9rem;
     margin: .5rem;
  }
  .cont p{
-    font-size: .9rem;
+    font-size: .6rem;
     margin-left: 2rem;
  }
 }
