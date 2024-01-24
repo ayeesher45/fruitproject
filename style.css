@@ -43,7 +43,6 @@ border-radius: 50%;
     margin: 15px;
 }
 i.fa-bars{
-   width:min-content;
    font-size:10px;
    padding:10px;
    padding-left: 0;
@@ -712,13 +711,15 @@ font-weight: 50rem;
     
     
  }
- @media only screen and (max-width:700px) {
-.barr .fa-bars{
+ @media only screen and (max-width:768px) {
+   [class*="col-"]{
+      width: 100%;
+   }
+  i.fa-bars{
       font-size:15px;
       padding:20px;
       transition:.1s;
       display: block;
-      width: fit-content;
       margin-left: 40px;
   }
   i.fa-bars:active{
@@ -734,7 +735,7 @@ font-weight: 50rem;
    transition:.4s;
    position: absolute;
    padding:0 20px;
-   margin: 11rem 10rem 0 15rem;
+   margin: 11rem 10rem 0 14.5rem;
 }
    .bar{
       background-color:white ;
@@ -743,8 +744,8 @@ font-weight: 50rem;
   
   }
   .logo img{
-  width: 12%;
-  height: 13%;
+  width: 10%;
+  height: 10%;
   border-radius: 30%;
   }
   #itemcount{
@@ -987,33 +988,33 @@ font-size:1.2em;
         font-size: .6rem;
     }
  .ad1{
-    padding:70px;
+    padding:60px;
     height: 50%;
     width: 230px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-top: 20px;
  }
  
  .ad2{
-   padding:70px;
+   padding:60px;
    height: 50%;
    margin-top: 60px;
    width: 230px;
-   margin-left: 50px;
+   margin-left: 45px;
 }
  .ad3{
-   padding: 70px;
+   padding: 60px;
     margin-top:60px;
     height: 50%;
     width: 230px;
-    margin-left: 50px;
+    margin-left: 45px;
  }
  .ad4{
     padding:70px;
     height: 50%;
     width: 260px;
     margin: 20px;
-    margin-left: 80px;
+    margin-left: 60px;
  }
  .home{
     font-size: 1.3rem;
