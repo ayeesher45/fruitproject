@@ -49,33 +49,63 @@
         </div>
         </form>
         </header>
-    <div class="container-fluid p-5 form1">
-        <form method="post" action="">
-            <h1>SIGN-UP</h1><br>
-            <div class="container-fluid info_content">
-                <label>Name: </label>
-                <input type="text" name="name"><br>
-            </div>
-            <div class="container-fluid info_content">
-                <label>Username: </label>
-                <input type="text" name="name"><br>
-            </div>
-            <div class="container-fluid info_content">
-                <label>password: </label>
-                <input type="password" name="names"><br>
-            </div>
-            <div class="container-fluid info_content">
-                <label>Phone Number: </label>
-                <input type="text" name="age"><br>
-            </div>
-            <div class="container-fluid info_content">
-                <label>Email: </label>
-                <input type="email" name="email"><br>
-            </div>
-            <div class="but1"><button> <a href="signin.html"> Sign-up</a></button>
-            </div>
-            <p>Already have an account? <a href="signin.html"> Sign-in</a></p>
-            </form>
+    <div class="container-fluid p-0 form1">
+
+<form action="createaccountexec.php" method="POST" name="register_form">
+
+<h3 class="m-b-20"><span>Sign Up</span></h3>
+<div class="row row-space-10 pb-0 mb-0">
+
+<div class="col-sm-6 ">
+<div class="form-group">
+<label class="control-label text-white h6">FirstName</label>
+<input type="text" name="fname" class="form-control" placeholder="Enter your FirstName" />
+</div>
+<div class="form-group ">
+<label class="control-label text-white h6 h6">Email Address </span></label>
+<input type="text" name="email" class="form-control" placeholder="Enter your Email Address" />
+</div>
+<div class="form-group">
+  <label class="control-label text-white h6">Phone Number</label>
+  <input type="varchar" name="phone" class="form-control" placeholder="Enter your Phone Number" />
+  </div>
+<div class="form-group">
+<label class="control-label text-white h6">Password </label>
+<input type="password" name="pword" class="form-control" placeholder="Enter your Password" />
+</div>
+</div>
+
+<div class="col-sm-6 pb-0 mt-0">
+<div class="form-group">
+<label class="control-label text-white h6">Surname</label> 
+<input type="text" class="form-control" name="sname" placeholder="Enter your Surname" />
+</div>
+<div class="form-group">
+<label class="control-label text-white h6">Username </label>
+<input type="text" class="form-control" name="username" placeholder="Enter your username" />
+
+</div>
+<div class="form-group">
+  <label class="control-label text-white h6">Confirm Password </span></label>
+  <input type="password"  name="confirmpword" class="form-control" placeholder="Confirm Password" />
+  </div>
+  <div class="form-group">
+  <label class="control-label text-white h6">Address </span></label>
+  <input type="address"  name="address" class="form-control" placeholder="Confirm Password" />
+  </div>
+</div>
+</div>
+
+<div class="m-b-10 m-t-10 m-0 p-0">
+<div class="checkbox-inline p-0">
+<input type="checkbox" id="login-remember-me" value="2"> <label for="login-remember-me ">I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</label>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Sign Up</button>
+<div class="m-t-20">
+Already have an Adobe ID? <a href="signin.php">Sign In</a>
+</div>
+</form>
     </div>
     <footer class="container-fluid foot">
         <div class="foot-bar">

@@ -48,7 +48,7 @@
         </div>
         </form>
         </header>
-        <nav class=" container-fluid p-0 navi-bar">
+        <nav class=" container-fluid p-4 navi-bar">
         <div class="container-fluid navbar">
         <div class="bar1">
         <h1>HALIE&AYEESHA <br> FRUIT</h1>
@@ -60,8 +60,8 @@
             fruits! Every success tree has
             all working normally!” </P>
             <div class="but">
-            <button><a href="signup.html">Sign-up</a></button>
-            <button><a href="signin.html">Sign-in</a> </button>
+            <button><a href="signup.php">Sign-up</a></button>
+            <button><a href="signin.php">Sign-in</a> </button>
             </div>
         </div>
         </div>
@@ -97,15 +97,15 @@
                 vitality through your body (like a slight
             electric current) that shakes you
             delightfully.</p>
-        <header class="head">
-        <div class="container-fluid headbar">
-        <h1>Halie <br> & Ayeesha FRUIT</h1>
-        <P>I don't think that anything in life should
+        <header class="head container-fluid p-3">
+        <div class="container-fluid  headbar">
+        <h1 >Halie <br> & Ayeesha FRUIT</h1>
+        <P class="h6">I don't think that anything in life should
         be so regimented that you're not having fun or can't enjoy like everybody else. Just know
         that fresh food is always going to be better for you.>Plus, if you let fruit rot, it turns into wine
         , something brussel sprouts never do</P>
         </div>
-        <div class="container-fluid headbar1">
+        <div class="container-fluid headbar1 ">
         <img src="fruit29.png" alt="fruit">
         <img src="fruit21.png" alt="fruit">
         </div>
@@ -189,20 +189,20 @@
         </div>  
         </footer>
     </div>
-<script>
+    <script>
 
-let barr = document.querySelector(".barr");
-    let ul = document.querySelector("#ul-mobile");
-    let aysha = true;
-    barr.addEventListener("click",()=>{
-    if(!!aysha){
-        ul.style.height="145px";
-        aysha = false;
-    }else{
-        ul.style.height="0px";
-        aysha = true;
-    }
-    });
-    </script>
+            let bars = document.querySelector(".bar");
+                let ul = document.querySelector("#ul-mobile");
+                let aysha = true;
+                bars.addEventListener("click",()=>{
+                if(!!aysha){
+                    ul.style.height="145px";
+                    aysha = false;
+                }else{
+                    ul.style.height="0px";
+                    aysha = true;
+                }
+                });
+                </script>
 </body>
 </html>
