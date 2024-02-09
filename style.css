@@ -304,8 +304,8 @@ font-weight: 50rem;
     color:rgb(121, 167, 52);
 }
  .ad img{
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     margin-bottom: 20px;
  }
  .ad button{
@@ -751,7 +751,7 @@ font-weight: 50rem;
    transition:.4s;
    position: absolute;
    padding:0 20px;
-   margin: 11rem 10rem 0 14rem;
+   margin: 11rem 10rem 0 13rem;
 }
    .bar{
       background-color:white ;
@@ -857,12 +857,12 @@ font-weight: 50rem;
     background-color: rgba(0, 7, 1, 0.164);
 }
 .nav-box h1{
-    font-size: 20px;
+    font-size: 28px;
 }
 .nav-info p{
     margin-top: 5px;
     padding: 8px;
-    font-size: 9px;
+    font-size: 10px;
 }
 .slide{
    margin-bottom: 10px;
@@ -911,7 +911,7 @@ grid-template-columns: 150px 150px ;
     row-gap: 32px;
     justify-content:center ;
     padding: 40px 25px;
-    margin-top: -5rem;
+    margin-top: -7.3rem;
     border-radius: 70px;
 }
 .name{
