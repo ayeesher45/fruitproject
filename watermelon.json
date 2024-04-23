@@ -1,0 +1,44 @@
+[
+    {
+        "id": 28,
+        "name": "COTONOU WATERMELON",
+        "price": 1999,
+        "image": "melon/melon3.jpeg"
+    },
+    {
+        "id": 29,
+        "name": "FRESH WATERMELON",
+        "price": 5919,
+        "image": "melon/melon4.jpeg"
+    },
+    {
+        "id": 30,
+        "name": "SLICE WATERMELON",
+        "price": 1999,
+        "image": "melon/melon2.jpeg"
+    },
+    {
+        "id": 31,
+        "name": "WATERMELON",
+        "price": 1099,
+        "image": "melon/melon1.jpeg"
+    },
+    {
+        "id": 32,
+        "name": "JAPAN WATERMELON",
+        "price": 2099,
+        "image": "melon/melon6.jpeg"
+    },
+    {
+        "id": 33,
+        "name": "BEACH WATERMELON",
+        "price": 2999,
+        "image": "melon/melon7.jpeg"
+    },
+    {
+        "id": 34,
+        "name": "SWEET WATERMELON",
+        "price": 2040,
+        "image": "melon/melon5.jpeg"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "TANGERINE",
+        "price": 1999,
+        "image": "orange/oran2.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "COTONOU ORANGE",
+        "price": 5919,
+        "image": "orange/oran3.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "FRESH ORANGE",
+        "price": 1999,
+        "image": "orange/oran4.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "REAP ORANGE",
+        "price": 1099,
+        "image": "orange/oran5.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "GRAPE ORANGE",
+        "price": 2099,
+        "image": "orange/oran6.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "RED ORANGE",
+        "price": 2999,
+        "image": "orange/oran7.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "PEEL ORANGE",
+        "price": 2040,
+        "image": "orange/oran8.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "RED GRAPE ORANGE",
+        "price": 3590,
+        "image": "orange/oran9.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "UNREAP ORANGE",
+        "price": 1570,
+        "image": "orange/oran10.jpeg"
+    }
+    
+]

@@ -4,15 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*nav bar*/
 .bar{
     background-color:white ;
     box-shadow: .3em .3em .3em .2em rgba(0,0,0,.2);
-    display: flex;
-    justify-content:space-between ;
     margin-bottom: 4px;
     height: 55px;
+    position: fixed;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 15px;
 }
+
 .logo img{
 width: 15%;
 height: 20%;
@@ -56,7 +63,6 @@ ul{
     justify-content:center;
     align-items: center;
     padding-top:15px;
-    margin-right: 120px;
 }
 ul li i {
     color: green;
@@ -81,18 +87,36 @@ a:hover{
    display: flex;
    gap: 10px;
    color: white;
-   font-size: .9rem;
-   padding: 7px;
+   font-size: .8rem;
    margin-right: -2px;
 }
-.searchcart .fa{
-  background-color: green;
-  padding: 4.5px;
+.searchcart .fa i {
+  font-size: 1rem;
+}
+svg{
+   width: 30px; 
+}
+header .icon-cart{
+   position: relative;
+}
+header .icon-cart span{
+   display: flex;
+   width: 20px;
+   height: 20px;
+   background-color: green;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   border-radius: 50px;
+   position: absolute;
+   top: 50%;
+   right: -20%;
 }
 .nav-bar{
     background-size: cover;
     background-color: aliceblue;
     background-image: url(fruithome3.jpg);
+    padding-top: 3rem;
 }
 .nav-box{
     background-color: rgba(0, 7, 1, 0.164);
@@ -114,68 +138,68 @@ a:hover{
      font-size: 12px;
      color:white;
 }
-.slide{
-    background-color: #a5c47799  ;
-    color: white;
-}
-.order{
-   width: 50%;
-    background-color: rgb(121, 167, 52) ;
-    color: white;
-    font-weight:30%;
-    font-size:1rem;
-    margin-top: 10px;
-    margin-left: 24.5rem ;
-    border-radius: 2rem;
-    text-align: center;
-}
+/* order page*/
 
 .head_bar{
 background-color:rgb(121, 167, 52) ;
 }
 .head-box img{
-    width: 120px;
-    height: 120px;
-    margin: 1rem;
-    border-radius: 30px;
+    width: 150px;
+    height: 150px;
     transition:0.6s;
+    object-fit: cover;
+    margin-bottom: 30px;
+    margin-left: 50px;
     }
 .head-box img:hover{
     transform: scale(1.2);
 }
 .head-box {
-    margin-top: 10px;
-    background-color:white;
-    display: grid;
-grid-template-columns: 150px 150px 150px 150px ;
-    column-gap: 4em;
-    row-gap: 70px;
-    justify-content:center ;
-    padding: 40px 25px;
-    margin-top: -5rem;
-    border-radius: 70px;
+   margin-top: 50px;
+   background-color:white;
+   width: 100%;
+   display: grid;
+   grid-template-columns:2fr 3fr auto;
+   place-items: center;
+   border-radius: 70px;
+   column-gap:120px;
+   row-gap: 50px;
+   margin: 70px;
 }
 .name{
-   padding-right: 50px;
-    color:rgb(78, 110, 28) ;
-    font-size:.6rem;
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.04);
-    border-radius: 35px;  
+   box-sizing: border-box;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    background-color:white;
+    padding:50px 0 40px 0px;
+    height: 90%;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 60px;
+    transform: translateX(100px);
+    transition: all 5s 1s cubic-bezier(0,1,.3,1);
+    width: 250px;
+    z-index: 10px;
+    transform: translateX(10px);
+    transition: transform 0.4s;
 }
 .name h3 {
    font-size: 1.3rem;
    text-align: center;
+   padding-bottom: 5px;
 }
 .name h4 {
    font-size: 1rem;
    text-align: center;
 }
-.name button{
+.name button a{
+   text-decoration: none;
+   color: white;
+}
+.name button {
     font-weight: bold;
-    color: white;
     padding: 4px;
-    margin-bottom: 1rem;
-    margin-left: 20px;
+    margin-bottom: 2rem;
+    margin-left: 70px;
     border-radius: 1rem;
     background-color:rgb(121, 167, 52) ;
     border-color:rgb(180, 214, 180) ;
@@ -186,20 +210,22 @@ grid-template-columns: 150px 150px 150px 150px ;
 }
 
 .order2 {
-    background-color:rgba(121, 167, 52, 0) ;
+    background-color:rgba(33, 51, 7, 0) ;
     font-size:.9rem;
     font-weight: bold;
     color:rgb(121, 167, 52)  ;
     text-align: center;
     margin: 2rem 2rem;
 }
+
+/*footer*/
 .foot{
-    background-color:rgb(242, 252, 227) ;
-    margin-top: 1rem; 
+    background-color:rgb(33, 42, 21) ;
+    margin-top: 4rem; 
    
 }
 .foot-bar h1{
-color:rgb(17, 22, 8) ;
+color:white;
 font-size:1.8rem;
 font-weight: 50rem;
     display:flex;
@@ -214,28 +240,29 @@ font-weight: 50rem;
     gap: 3rem;
 }
 .foot h2{
-    color:rgb(9, 43, 9);
+    color:#fff;
     font-weight:300rem;
     font-size: 25px;
 }
 .foot p{
-    color: rgb(27, 17, 17);
+    color:#fff;
     display: flex;
     flex-direction: column;
 }
 .foot p a{
-    color:rgb(48, 35, 35) ;
+    color:#fff;
     font-weight: lighter;
     font-size: .8rem;
  }
  .copyright p{ 
-    color:black;
+    color:#fff;
     font-size: large;
     font-weight: bold;
     align-items: center;
     padding-bottom: 12px;
     margin: 0;
  }
+ /* homepage */
  .navbar{
     width: 100%;
     height: 100%;
@@ -243,8 +270,10 @@ font-weight: 50rem;
     animation-name: myanime;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    padding: 4% 4%;
+    padding:8rem;
     margin: 0.5rem 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
    
  }
  @keyframes myanime {
@@ -278,7 +307,7 @@ font-weight: 50rem;
     width: 100%;
     height: 80%;
    text-align: center;
-    padding: 10px;
+    padding: 2rem;
  }
  .bar1 h1{
     font-size: 2.5rem;
@@ -302,6 +331,15 @@ font-weight: 50rem;
 .ad h2{
     font-size: 1rem;
     color:rgb(121, 167, 52);
+}
+.ad-product{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 35px;
+   font-weight: bold;
+   color: green;
+   text-align: center;
+   margin: 30px;
+   margin-top: 60px;
 }
  .ad img{
     width: 9rem;
@@ -462,8 +500,9 @@ font-weight: 50rem;
    padding: 20px;
    font-size: .8rem;
  }
+ /* aboutpage */
  .mainbar{
-    margin:10px;
+    margin:60px;
     display: flex;
  }
  .main1{
@@ -514,20 +553,13 @@ font-weight: 50rem;
   font-size: 15px;
   text-align: center;
 }
-/*signin*/
 
-.form1{
+
+/*signin PAGE*/
+
+  .signinform{
     width: 100%;
-    height: 41rem;
-    background-image: url(fruithome7.jpg);
-    background-size: cover;
-    align-items: center;
-    padding:20px;
-    margin-top: 1rem;
-  }
-  form{
-    width: 70%;
-    height: 70vh;
+    height: 100%;
     margin-left: 20rem;
     padding-top: 1.5rem;
     background-color:rgba(58, 97, 57, 0.3);
@@ -537,77 +569,18 @@ font-weight: 50rem;
     flex-direction: column;
    
  }
- .form1 h3{
-   margin-top: 3rem;
-    color: white;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 1.5rem;
- }
-
- .form1 p{
-    color: white;
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 2rem;
- }
- .form1 p a{
-    color: rgb(168, 218, 168);
-    font-size: .9rem;
-    text-decoration: none;
-    background-color: rgb(18, 71, 14);
-    padding: .4rem;
-    border-radius:1rem;
- }
- .form1 p a:hover{
-    transform: scale(1.2);
- }
- 
- .info_content
- {
-    width: 80%;
-    height: 100px;
-    display: flex;
-    margin-bottom: 1em;
-    align-items: center; 
- }
- .form1  .info_content {
-   margin-left: 10rem;
- }
- 
- .info_content label
- {
-    width: 19%;
-    font-size: 13px;
-    font-weight: bold;
-    color: white;
-    margin-left: 3rem;
- }
- 
- 
- .info_content input
- {
-    width: 30%;
-    height: 70%;
-    border-radius: 1em;
-    border: none;
-    padding: 9px;
-    outline: none;
-    background-color: white;
-    color:black;
-    font-size: .9rem;
- }
  .sign{
     display: flex;
     flex-direction: row;
     row-gap: 1rem;
     justify-content: space-around;
-    margin: 2rem 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0 0 0;
  }
  .sign .nav-box{
     background-color: white;
+    align-items: center;
+    justify-items: center;
+    margin-top:5rem ;
  }
  .sign .nav-box h1{
     font-size: 2rem;
@@ -622,21 +595,19 @@ font-weight: 50rem;
     background-size: cover;
     width: 50%;
     height: 30%;
+    margin-top: 1.8rem;
  
  }
  .signin form {
     width: 70%;
     height: 50vh;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    margin-left: 10rem;
-    padding-top: 1rem;
+    margin: 2rem 10rem 2rem 7rem;
     background-color:rgba(58, 97, 57, 0.3);
   display: flex;  
     flex-direction: column;
  }
  .signin h1{
-    color: white;
+    color: green;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
@@ -646,17 +617,25 @@ font-weight: 50rem;
    align-items: center;
    margin-right: 20rem;
  }
+ .signin .info_content label{
+   width: 19%;
+   font-size: 18px;
+   font-weight: bold;
+   color: green;
+   margin-left: 3rem;
+ }
  .signin .info_content input
  {
-    width: 60%;
-    height: 37%;
+    width: 55%;
+    height: 42%;
     border-radius: 1em;
     border: none;
     outline: none;
     background-color: white;
     color:black;
+    margin-left: .5rem;
+    padding: 15px;
     font-size: .9rem;
-    margin-left: 1rem;
  }
  .but1 button{
     margin-bottom: 1rem;
@@ -674,6 +653,71 @@ font-weight: 50rem;
     font-size:1rem;
     font-family: 'Times New Roman', Times, serif;
   }
+
+/*SIGNUP PAGE*/
+
+.form1{
+   margin: 4rem 0 0 0;
+   background-image: url(fruithome7.jpg);
+   object-fit:contain;
+   background-size: cover;
+   text-align: center;
+   padding: 5rem;
+}
+.signup{
+   background-color:rgba(68, 129, 54, 0.2);
+   padding:3rem;
+   width: 50%;
+   margin-left: 25rem;
+}
+.signup h1{
+   color: rgb(8, 41, 8);
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   
+}
+.info-cont{
+   margin:1.5rem;
+}
+.info-cont label{
+color: rgb(0, 6, 0);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+
+}
+.info-cont input{
+   border: none;
+   border-radius: 10px;
+   padding: 3px;
+   width: 60%;
+}
+.signup-btn button{
+   border: none;
+   background-color: rgb(13, 51, 13);
+   padding: 8px;
+   width: 100px;
+   border-radius: 18px;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+}
+#sign-p{
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.1rem;
+}
+#sign-p a{
+   text-decoration: none;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   background-color:rgba(8, 44, 8,.7) ;
+   padding: 3px;
+   border-radius: 10px;
+}
+
+  /* contactpage */
  .image img{
     width:100%;
     height:20rem;
@@ -697,7 +741,7 @@ font-weight: 50rem;
  .contact{
     width:100%;
     height:100%;
-    background-color: rgb(243, 248, 242);
+    background-color: rgb(227, 255, 210);
     background-size: cover;
     object-fit: fill;
     display: grid;
@@ -723,7 +767,32 @@ font-weight: 50rem;
     
     
  }
- @media only screen and (max-width:768px) {
+ @media screen and (max-width:992px) {
+   .ad{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      gap: 2rem;
+   }
+   .head-box {
+      grid-template-columns: 2fr 2fr ;
+      place-items: center;
+      width: 100%;
+   }
+   .signup{
+      background-color:rgba(68, 129, 54, 0.2);
+      padding:3rem;
+      width: 80%;
+      margin-left:6rem;
+   }
+   .form1{
+      padding:3rem;
+   }
+ }
+
+ @media screen and (max-width:768px) {
    [class*="col-"]{
       width: 100%;
    }
@@ -864,19 +933,9 @@ font-weight: 50rem;
     padding: 8px;
     font-size: 10px;
 }
-.slide{
-   margin-bottom: 10px;
-   padding: 0;
-    font-size: .6rem;
-}
-.order{
-   width: 50%;
-    color: white;
-    font-weight:20%;
+.order h1{
+    color:green;
     font-size:1rem;
-    margin-left:6rem ;
-    padding: 0.3rem;
-    border-radius: 2rem;
 }
 .grid-img img{
     width: 60px;
@@ -885,7 +944,7 @@ font-weight: 50rem;
 }
 .grid-img{
     display: grid;
-    grid-template-columns:100px 100px 100px;
+    grid-template-columns:100px 100px;
     margin-bottom:10px;
     
 }
@@ -906,19 +965,13 @@ background-color:rgb(121, 167, 52) ;
     margin-top: 10px;
     background-color:white;
     display: grid;
-grid-template-columns: 150px 150px ;
-    column-gap: 2em;
-    row-gap: 32px;
-    justify-content:center ;
-    padding: 40px 25px;
-    margin-top: -7.3rem;
-    border-radius: 70px;
+    grid-template-columns: 1fr ;
+    place-items: center;
 }
 .name{
     color:rgb(78, 110, 28) ;
     font-size:.6rem;
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.04);
-    padding: 20px;
+    padding: 40px;
     border-radius: 1rem;
 }
 .name h3 {
@@ -931,6 +984,7 @@ grid-template-columns: 150px 150px ;
     padding: 4px;
     margin-top: 0.1rem;
     transition: transform 0.4s;
+    margin-left: 53px;
 }
 .name button:hover{
    transform: scale(1.1);
@@ -987,17 +1041,26 @@ font-size:1.2em;
  .ad{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    padding: 3px;
+    gap: 2rem;
  }
 .ad h2{
     font-size: .9rem;
     color:rgb(121, 167, 52);
 }
+.ad-product{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 24px;
+   font-weight: bold;
+   color: green;
+   text-align: center;
+   margin: 10px;
+   margin-top: 60px;
+}
  .ad img{
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
  }
  .ad button{
         font-size: .6rem;
@@ -1193,7 +1256,7 @@ font-size:1.2em;
     width: 70%;
     height: 30%;
     font-size: .9rem;
-    margin-left:0;
+    margin-left:1.1rem;
  }
  .signin .info_content label{
    font-size: .9rem;
@@ -1203,13 +1266,53 @@ font-size:1.2em;
  .but1 button{
    margin-top: 1rem;
     margin-bottom: 2rem;
-    padding: 5px 5px;
-    font-size: .5rem;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 17px;
   }
  
   .but1 a{
-    font-size:.6rem;
+    font-size:.9rem;
   }
+  /*SIGNUP PAGE*/
+
+.form1{
+   
+   padding: 5rem;
+}
+.signup{
+   padding:0;
+   width: 80%;
+   margin-left:3rem;
+}
+.signup h1{
+   font-size: 1.2rem;
+   
+}
+.info-cont{
+   margin:.8rem;
+}
+.info-cont label{
+font-size: 17px;
+
+}
+.info-cont input{
+   padding:0;
+   width: 45%;
+}
+.signup-btn button{
+   padding: 3px;
+   width: 60px;
+   margin-bottom: 1rem;
+   font-size: .9rem;
+}
+#sign-p{
+   font-size: .9rem;
+}
+#sign-p a{
+   padding: 3px;
+   font-size: .8rem;
+}
  .image img{
     width:100%;
     height:10rem;

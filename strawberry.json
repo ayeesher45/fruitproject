@@ -1,0 +1,56 @@
+[
+    {
+        "id": 19,
+        "name": "COTONOU STRAWBERRY",
+        "price": 1999,
+        "image": "sberry/sberry3.jpeg"
+    },
+    {
+        "id": 20,
+        "name": "IMPORTED STRAWBERRY",
+        "price": 5919,
+        "image": "sberry/sberry5.jpeg"
+    },
+    {
+        "id": 21,
+        "name": "STRAWBERRY",
+        "price": 1999,
+        "image": "sberry/sberry4.jpeg"
+    },
+    {
+        "id": 22,
+        "name": "REAP STRAWBERRY",
+        "price": 1099,
+        "image": "sberry/sberry1.jpeg"
+    },
+    {
+        "id": 23,
+        "name": "COTONOU BLUEBERRY",
+        "price": 2099,
+        "image": "sberry/blberry.jpeg"
+    },
+    {
+        "id": 24,
+        "name": "WHITEBERRY",
+        "price": 2999,
+        "image": "sberry/sberry6.jpeg"
+    },
+    {
+        "id": 25,
+        "name": "BLUEBERRY",
+        "price": 2040,
+        "image": "sberry/sberry7.jpeg"
+    },
+    {
+        "id": 26,
+        "name": "PURPLEBERRY",
+        "price": 3590,
+        "image": "sberry/purberry.jpeg"
+    },
+    {
+        "id": 27,
+        "name": "FRESH STRAWBERRY",
+        "price": 1570,
+        "image": "sberry/sberry2.jpeg"
+    }
+]

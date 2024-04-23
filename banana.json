@@ -1,0 +1,56 @@
+[
+    {
+        "id": 44,
+        "name": "FRESH PINEAPPLE",
+        "price": 1999,
+        "image": "banana/ban1.jpeg"
+    },
+    {
+        "id": 45,
+        "name": "COTONOU BANANA",
+        "price": 5919,
+        "image": "banana/ban11.jpeg"
+    },
+    {
+        "id": 46,
+        "name": " COTONOU RAW BANANA",
+        "price": 1999,
+        "image": "banana/ban7.jpeg"
+    },
+    {
+        "id": 47,
+        "name": "RED BANANA",
+        "price": 1099,
+        "image": "banana/ban6.jpeg"
+    },
+    {
+        "id": 48,
+        "name": "REAP BANANA",
+        "price": 2099,
+        "image": "banana/ban2.jpeg"
+    },
+    {
+        "id": 49,
+        "name": "BANANA",
+        "price": 2999,
+        "image": "banana/ban3.jpeg"
+    },
+    {
+        "id": 50,
+        "name": "FRESH BANANA",
+        "price": 2040,
+        "image": "banana/ban8.jpeg"
+    },
+    {
+        "id": 51,
+        "name": "BEACH BANANA",
+        "price": 3590,
+        "image": "banana/ban4.jpeg"
+    },
+    {
+        "id": 52,
+        "name": "UNREAP BANANA",
+        "price": 1570,
+        "image": "banana/ban9.jpeg"
+    }
+]

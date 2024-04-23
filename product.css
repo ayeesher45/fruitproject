@@ -1,0 +1,197 @@
+ /*orange page*/
+ body{
+    margin: 0;
+    font-family: sans-serif;
+ }
+ .container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+ }
+ svg{
+    width: 30px; 
+ }
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+ }
+ .title h1{
+    font-weight: bolder;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ header .icon-cart{
+    position: relative;
+ }
+ header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    right: -20%;
+ }
+ .oranges .item img, .pineapple .item img, .strawberry .item img, .mango .item img, .watermelon .item img, .banana .item img{
+    width: 100%;
+    height: 100%;
+ }
+ .oranges , .pineapple , .strawberry , .mango , .watermelon , .banana{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+ }
+ .oranges .item , .pineapple .item, .strawberry .item, .mango .item, .watermelon .item, .banana .item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+ }
+ .oranges .item h2, .pineapple .item h2, .strawberry .item h2, .mango .item h2, .watermelon .item h2, .banana .item h2{
+    font-weight: 500;
+    font-size: 1rem;
+    padding-top: 10px;
+ }
+ .oranges .item .price, .pineapple .item .price, .strawberry .item .price, .mango .item .price, .watermelon .item .price, .banana .item .price{
+    letter-spacing: 1px;
+    font-size:15px;
+ }
+ .oranges .item button, .pineapple .item button, .strawberry .item button, .mango .item button, .watermelon .item button, .banana .item button{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+ }
+ .carttab{
+    width: 400px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right:0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition:.5s;
+ }
+ body.showcart .carttab{
+    inset:0 0 0 auto;
+ }
+ body.showcart .container{
+    transform: translateX(-250px);
+    
+ }
+ .carttab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+ } 
+ .carttab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+ .carttab .btn button{
+    background-color: orange;
+    border: none;
+    font-family:sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+ }
+ .carttab .btn .close{
+    background-color: white;
+ }
+ .carttab .listcart .item img{
+     width: 100%;
+     height: 100%;    
+ }
+ .carttab .listcart .item{
+    display: grid;
+    grid-template-columns:70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;    
+ }
+ .carttab .quantity span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: green;
+    border-radius: 50%;
+    cursor: pointer;
+ } 
+ .carttab .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+ }
+.listcart .item:nth-child(even){
+    background-color: rgb(4, 102, 4);
+ }
+ .listcart{
+    overflow: auto;
+ }
+ .listcart::-webkit-scrollbar{
+    width:0;
+ }
+ #lists{
+   margin-top: 20px;
+ }
+ #lists ul li{
+   padding: 5px;
+   color: green;
+}
+#lists ul li a{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+   text-decoration: none;
+ }
+ .top_cont{
+   position: fixed;
+   bottom: 5%;
+   right: 5%;
+   background-color: green;
+   color: #fff;
+   padding: 15px;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .top_cont a{
+     color: white;
+ }
+ @media screen and (max-width:992px) {
+    .oranges{
+        grid-template-columns: repeat(3 ,1fr);
+    }
+   
+ }
+
+ @media screen and (max-width:768px) {
+    .oranges , .pineapple , .strawberry , .mango , .watermelon , .banana{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .carttab h1{
+      font-size: 2rem;
+    }
+
+ }

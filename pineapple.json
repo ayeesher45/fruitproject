@@ -1,0 +1,56 @@
+[
+    {
+        "id": 10,
+        "name": "COTONOU PINEAPPLE",
+        "price": 1999,
+        "image": "pine/pine3.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "FRESH PINEAPPLE",
+        "price": 5919,
+        "image": "pine/pine5.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "SLICE PINEAPPLE",
+        "price": 1999,
+        "image": "pine/pine4.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "REAP PINEAPPLE",
+        "price": 1099,
+        "image": "pine/pine10.jpeg"
+    },
+    {
+        "id": 14,
+        "name": "PINEAPPLE",
+        "price": 2099,
+        "image": "pine/pine6.jpeg"
+    },
+    {
+        "id": 15,
+        "name": "BEACH PINEAPPLE",
+        "price": 2999,
+        "image": "pine/pine9.jpeg"
+    },
+    {
+        "id": 16,
+        "name": "PEEL ORANGE",
+        "price": 2040,
+        "image": "pine/pine7.jpeg"
+    },
+    {
+        "id": 17,
+        "name": "LOCAL PINEAPPLE",
+        "price": 3590,
+        "image": "pine/pine1.jpeg"
+    },
+    {
+        "id": 18,
+        "name": "FRESH PINEAPPLE",
+        "price": 1570,
+        "image": "pine/pine2.jpeg"
+    }
+]

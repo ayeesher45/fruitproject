@@ -1,0 +1,56 @@
+[
+    {
+        "id": 35,
+        "name": "COTONOU PINEAPPLE",
+        "price": 1999,
+        "image": "mango/man3.jpeg"
+    },
+    {
+        "id": 36,
+        "name": "REAP MANGO",
+        "price": 5919,
+        "image": "mango/man5.jpeg"
+    },
+    {
+        "id": 37,
+        "name": "LEAVE MANGO",
+        "price": 1999,
+        "image": "mango/man4.jpeg"
+    },
+    {
+        "id": 38,
+        "name": "NORTH MANGO",
+        "price": 1099,
+        "image": "mango/man1.jpeg"
+    },
+    {
+        "id": 39,
+        "name": "FRESH MANGO",
+        "price": 2099,
+        "image": "mango/man6.jpeg"
+    },
+    {
+        "id": 40,
+        "name": "BEACH MANGO",
+        "price": 2999,
+        "image": "mango/man9.jpeg"
+    },
+    {
+        "id": 41,
+        "name": "SHERRY MANGO",
+        "price": 2040,
+        "image": "mango/man7.jpeg"
+    },
+    {
+        "id": 42,
+        "name": "LOCAL MANGO",
+        "price": 3590,
+        "image": "mango/man8.jpeg"
+    },
+    {
+        "id": 43,
+        "name": "RED MANGO",
+        "price": 1570,
+        "image": "mango/man2.jpeg"
+    }
+]
