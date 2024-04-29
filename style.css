@@ -1263,18 +1263,18 @@ font-size:1.2em;
     margin-left:0;
  }
  .signin h1{
-    font-size: 1.1rem;
+    font-size: 1rem;
    margin-bottom: -20px;
  }
  .signin .info_content {
-   margin-bottom:-23px;
+   margin-bottom:-18px;
  }
  .signin .info_content input
  {
     width: 70%;
-    height: 30%;
+    height: 10%;
     font-size: .8rem;
-    margin-left:1.1rem;
+    margin-left:1.5rem;
  }
  .signin .info_content label{
    font-size: .7rem;
@@ -1298,24 +1298,24 @@ font-size:1.2em;
    padding: 5rem;
 }
 .signup{
-   padding:0;
+   padding:20px;
    width: 80%;
    margin-left:3rem;
 }
 .signup h1{
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    
 }
 .info-cont{
    margin:.8rem;
 }
 .info-cont label{
-font-size: 17px;
+font-size: 14px;
 
 }
 .info-cont input{
    padding:0;
-   width: 50%;
+   width: 70%;
 }
 .signup-btn button{
    padding: 3px;

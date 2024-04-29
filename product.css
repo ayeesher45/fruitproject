@@ -158,9 +158,9 @@
  }
 
  #lists ul li{
-   padding: 5px;
+   padding: 3px;
    color: green;
-   margin: 10px;
+   margin: 5px;
 }
 #lists ul li a{
    color: green;
@@ -171,7 +171,7 @@
  .top_cont{
    position: fixed;
    bottom: 5%;
-   right: 5%;
+   right: 12%;
    background-color: green;
    color: #fff;
    padding: 15px;
@@ -218,15 +218,17 @@
   }
   .carttab .listcart .item{
    gap: 0;
-   grid-template-columns:5rem 6rem 3rem 5rem;
+   grid-template-columns:7rem 7rem 3rem 5rem;
   }
   .carttab .btn button{
    font-size: 14px;
    font-weight: 100;
   }
- 
+  #lists ul{
+   margin:5px;
+  }
   #lists ul li a{
-   font-size: 18px;
+   font-size: 14px;
    padding: 0;
   }
   #lists ul li{
