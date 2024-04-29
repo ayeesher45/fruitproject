@@ -31,7 +31,7 @@ closecart.addEventListener( "click", () => {
 
 const addDataToHTML = (products)  => {
     oranges.innerHTML = "";
-    if(orangesLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -56,7 +56,7 @@ oranges.addEventListener("click", (event) => {
 })
 const addDataToHTML2 = (products)  => {
     pineapple.innerHTML = "";
-    if(pineappleLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -81,7 +81,7 @@ pineapple.addEventListener("click", (event) => {
 })
 const addDataToHTML3 = (products)  => {
     strawberry.innerHTML = "";
-    if(strawberryLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -106,7 +106,7 @@ strawberry.addEventListener("click", (event) => {
 })
 const addDataToHTML4 = (products)  => {
     banana.innerHTML = "";
-    if(bananaLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -132,7 +132,7 @@ banana.addEventListener("click", (event) => {
 
 const addDataToHTML5 = (products)  => {
     mango.innerHTML = "";
-    if(mangoLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -157,7 +157,7 @@ mango.addEventListener("click", (event) => {
 })
 const addDataToHTML6 = (products)  => {
     watermelon.innerHTML = "";
-    if(watermelonLists.length > 0 ){
+    if(listproducts.length > 0 ){
         products.forEach(product => {
             let newproduct  = document.createElement("div");
             newproduct.classList.add("item");
@@ -183,9 +183,7 @@ watermelon.addEventListener("click", (event) => {
 
 
 const addTocart = (product_id) => {
-    console.log("Adding product with ID:", product_id);
     let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
-    console.log("Position in cart:", positionThisProductInCart);
    if(carts.length <= 0){
     carts = [{
         product_id: product_id,
@@ -202,7 +200,6 @@ const addTocart = (product_id) => {
    addCartToHTML();
    addCartToMemory();
  }
-
  const addCartToMemory = () => {
     localStorage.setItem("cart", JSON.stringify(carts));
  }
@@ -231,10 +228,7 @@ const addCartToHTML = () => {
                         <span class="plus">+</span>
                     </div>
                 `;
-            } else {
-                console.error("Product information not found for product ID:", cart.product_id);
-            }
-            
+            }  
             listCartHTML.appendChild(newcart);
         })
     }
@@ -276,8 +270,8 @@ const changeQuantity = (product_id, type) => {
     fetch("oranges.json")
     .then(Response => Response.json())
     .then(data => {
-      orangesLists = data;
-      addDataToHTML(orangesLists);
+        listproducts = data;
+      addDataToHTML(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));
@@ -289,8 +283,8 @@ const changeQuantity = (product_id, type) => {
     fetch("pineapple.json")
     .then(Response => Response.json())
     .then(data => {
-      pineappleLists = data;
-      addDataToHTML2(pineappleLists);
+        listproducts = data;
+      addDataToHTML2(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));
@@ -301,8 +295,8 @@ const changeQuantity = (product_id, type) => {
     fetch("strawberry.json")
     .then(Response => Response.json())
     .then(data => {
-      strawberryLists = data;
-      addDataToHTML3(strawberryLists);
+        listproducts = data;
+      addDataToHTML3(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));
@@ -313,8 +307,8 @@ const changeQuantity = (product_id, type) => {
     fetch("banana.json")
     .then(Response => Response.json())
     .then(data => {
-      bananaLists = data;
-      addDataToHTML4(bananaLists);
+        listproducts = data;
+      addDataToHTML4(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));
@@ -325,8 +319,8 @@ const changeQuantity = (product_id, type) => {
     fetch("mango.json")
     .then(Response => Response.json())
     .then(data => {
-      mangoLists = data;
-      addDataToHTML5(mangoLists);
+        listproducts = data;
+      addDataToHTML5(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));
@@ -337,8 +331,8 @@ const changeQuantity = (product_id, type) => {
     fetch("watermelon.json")
     .then(Response => Response.json())
     .then(data => {
-      watermelonLists = data;
-      addDataToHTML6(watermelonLists);
+        listproducts = data;
+      addDataToHTML6(listproducts);
       //GET Cart from memory
       if(localStorage.getItem("cart")){
           carts = JSON.parse(localStorage.getItem("cart"));

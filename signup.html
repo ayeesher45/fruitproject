@@ -16,7 +16,6 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-
         <header>
             <div class="container-fluid bar">
                     <div class="logo">
@@ -25,7 +24,7 @@
                             <h1>Halie&Ayeesha</h1>
                         </div>
                     </div>
-                    <div>
+                    <div  id="nav-mobile">
                         <div class="barr"><i class="fa fa-bars">
                             </i></div>
                         <ul id="ul-mobile">
@@ -43,11 +42,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="searchcart">
-                        <div class="fa fa-search">
-                        </div>
-                        <div class="fa fa-cart-shopping"></div>
-                </div>
             </div>
             </form>
         </header>
@@ -125,20 +119,20 @@
         </div>  
         </footer>
     </div>
-        <script>
-
-            let bars = document.querySelector(".bar");
-                let ul = document.querySelector("#ul-mobile");
-                let aysha = true;
-                bars.addEventListener("click",()=>{
-                if(!!aysha){
-                    ul.style.height="145px";
-                    aysha = false;
-                }else{
-                    ul.style.height="0px";
-                    aysha = true;
-                }
-                });
-                </script>
+    
+    <script>
+        let bars = document.querySelector("#nav-mobile");
+        let ul = document.querySelector("#ul-mobile");
+        let aysha = true;
+    bars.addEventListener("click",()=>{
+        if(!!aysha){
+            ul.style.height="145px";
+            aysha = false;
+        }else{
+            ul.style.height="0px";
+            aysha = true;
+        }
+        });
+    </script>
 </body>
 </html>

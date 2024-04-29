@@ -47,14 +47,15 @@ border-radius: 50%;
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    margin: 15px;
+    margin: 25px;
 }
 i.fa-bars{
-   font-size:.9px;
-   padding:5px;
+   font-size:25px;
+   padding:20px;
    transition:.1s;
    display: none;
 }
+
 ul{
     display: flex;
     gap: 1.2rem;
@@ -63,6 +64,8 @@ ul{
     justify-content:center;
     align-items: center;
     padding-top:15px;
+    padding-right: 0;
+    margin-right: 50px;
 }
 ul li i {
     color: green;
@@ -666,7 +669,7 @@ font-weight: 50rem;
 }
 .signup{
    background-color:rgba(68, 129, 54, 0.2);
-   padding:3rem;
+   padding:5rem;
    width: 50%;
    margin-left: 25rem;
 }
@@ -678,7 +681,11 @@ font-weight: 50rem;
    
 }
 .info-cont{
-   margin:1.5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 1rem;
+   row-gap: -50px;
 }
 .info-cont label{
 color: rgb(0, 6, 0);
@@ -792,40 +799,37 @@ font-size: 20px;
    }
  }
 
- @media screen and (max-width:768px) {
+ @media only screen and (max-width:768px) {
    [class*="col-"]{
       width: 100%;
    }
-  i.fa-bars{
+   i.fa-bars{
       font-size:15px;
       padding:20px;
       transition:.1s;
       display: block;
-      width:20px;
-      height: 20px;
-      margin-left: 39px;
-      margin-bottom: 15px;
-      text-align: center;
   }
   i.fa-bars:active{
       background:rgba(255,255,255,.2);
   }
   #ul-mobile{
-   width:130px;
-   height:0;
-   overflow:hidden;
-   background:#60bb67;
-   text-align:center;
-   color:#fefefe;
-   transition:.4s;
-   position: absolute;
-   padding:0 20px;
-   margin: 11rem 10rem 0 13rem;
-}
+      width:180px;
+      height:0px;
+      overflow:hidden;
+      background:rgb(1, 22, 1);
+      text-align:center;
+      color:white;
+      transition:.4s;
+      position: absolute;
+      padding:0 8px;
+      margin-top: -10px;
+  }
    .bar{
       background-color:white ;
       box-shadow: .2em .2em .2em .1em rgba(0,0,0,.2);
       height: 30px;
+      justify-content: space-around;
+      margin-right:0;
   
   }
   .logo img{
@@ -854,14 +858,15 @@ font-size: 20px;
   }
   ul{
    display:inline;
-   justify-content:space-between;
+   justify-content:space-around;
    align-items: center;
    font-size: 12px;
    padding-right:0px;
 }
   ul li i {
-   padding:0px;
-   color: green;
+   padding:5px;
+   font-size: 12px;
+   color: white;
       
   }
   ul li{
@@ -876,8 +881,9 @@ font-size: 20px;
    border-radius: 10px;
 }
   ul li a{
-  color:green;
+  color:white;
   text-decoration: none;
+  font-size: .7rem;
   }
   a:hover{
       color: rgb(29, 151, 29);
@@ -1255,12 +1261,12 @@ font-size:1.2em;
  {
     width: 70%;
     height: 30%;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-left:1.1rem;
  }
  .signin .info_content label{
-   font-size: .9rem;
-   padding: 15px;
+   font-size: .7rem;
+   padding: 10px;
    margin: 0;
  }
  .but1 button{
@@ -1277,7 +1283,6 @@ font-size:1.2em;
   /*SIGNUP PAGE*/
 
 .form1{
-   
    padding: 5rem;
 }
 .signup{
@@ -1304,14 +1309,14 @@ font-size: 17px;
    padding: 3px;
    width: 60px;
    margin-bottom: 1rem;
-   font-size: .9rem;
+   font-size: .7rem;
 }
 #sign-p{
-   font-size: .9rem;
+   font-size: .7rem;
 }
 #sign-p a{
    padding: 3px;
-   font-size: .8rem;
+   font-size: .6rem;
 }
  .image img{
     width:100%;

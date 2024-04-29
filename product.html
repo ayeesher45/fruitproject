@@ -22,34 +22,32 @@
 
         <header>
             <div class="container-fluid bar">
-                <div class="logo">
-                    <img src="fruitlogo.jpg" alt="">
-                    <div>
-                        <h1>Halie&Ayeesha</h1>
+                    <div class="logo">
+                        <img src="fruitlogo.jpg" alt="">
+                        <div>
+                            <h1>Halie&Ayeesha</h1>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="barr"><i class="fa fa-bars">
-                        </i></div>
-                    <ul id="ul-mobile">
-                        <li> <i class="fa fa-home"></i>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li><i class="fa fa-history"></i>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li> <i class="fa fa-phone"></i>
-                            <a href="contact.html">CONTACT</a>
-                        </li>
-                        <li> <i class="fa-solid fa-shopping-basket"></i>
-                            <a href="order.html">ORDER</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div  id="nav-mobile">
+                        <div class="barr"><i class="fa fa-bars">
+                            </i></div>
+                        <ul id="ul-mobile">
+                            <li> <i class="fa fa-home"></i>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li><i class="fa fa-history"></i>
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                            <li> <i class="fa fa-phone"></i>
+                                <a href="contact.html">CONTACT</a>
+                            </li>
+                            <li> <i class="fa-solid fa-shopping-basket"></i>
+                                <a href="order.html">ORDER</a>
+                            </li>
+                        </ul>
+                    </div>
+           
                 <div class="searchcart">
-                    <div style="color: green; font-size: 1.1rem; margin-top: 7px; font-weight: bold;"
-                        class="fa fa-search">
-                    </div>
                     <div style="color: green;" class="icon-cart">
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -163,6 +161,21 @@
         <div class="top_cont">
           <a href="#"><i class="fa fa-angle-up"></i></a>
         </div>
+        
+        <script>
+            let bars = document.querySelector("#nav-mobile");
+            let ul = document.querySelector("#ul-mobile");
+            let aysha = true;
+        bars.addEventListener("click",()=>{
+            if(!!aysha){
+                ul.style.height="145px";
+                aysha = false;
+            }else{
+                ul.style.height="0px";
+                aysha = true;
+            }
+            });
+        </script>
 </body>
 <script src="app.js"></script>
 
