@@ -22,10 +22,10 @@ let bananaLists = []
 let carts = [];
 iconcart.addEventListener( "click", () => {
     body.classList.toggle("showcart")
-    top_cont.style.right="30%"
+    top_cont.style.right="40%"
 })
 closecart.addEventListener( "click", () => {
-    top_cont.style.right="5%"
+    top_cont.style.right="12%"
     body.classList.toggle("showcart")
 })
 
