@@ -35,29 +35,23 @@
                             </i></div>
                         <ul id="ul-mobile">
                             <li> <i class="fa fa-home"></i>
-                                <a href="index.html">HOME</a>
+                                <a href="index.php">HOME</a>
                             </li>
                             <li><i class="fa fa-history"></i>
-                                <a href="about.html">ABOUT</a>
+                                <a href="about.php">ABOUT</a>
                             </li>
                             <li> <i class="fa fa-phone"></i>
-                                <a href="contact.html">CONTACT</a>
+                                <a href="contact.php">CONTACT</a>
                             </li>
                             <li> <i class="fa-solid fa-shopping-basket"></i>
-                                <a href="order.html">ORDER</a>
+                                <a href="order.php">ORDER</a>
+                            </li>
+                            <li> <i class="fa-solid fa-switch"></i>
+                                <a href="logout.php">Logout</a>
                             </li>
                         </ul>
                     </div>
     
-                    <div class="searchcart">
-                        <div style="color: green;" class="icon-cart">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.3L19 7H7.3" />
-                            </svg>
-                            <span>0</span>
-                        </div>
-                    </div>
             </div>
             </form>
         </header>
@@ -72,10 +66,6 @@
                         Actions are
                         fruits! Every success tree has
                         all working normally!” </P>
-                    <div class="but">
-                        <button><a href="signup.html">Sign-up</a></button>
-                        <button><a href="signin.html">Sign-in</a> </button>
-                    </div>
                 </div>
             </div>
         </nav>

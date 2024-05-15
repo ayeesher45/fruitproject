@@ -2,7 +2,7 @@
 	$pdo = null;
 	function prepareConnection(){
 		$host ="localhost";
-		$db ="crahkaij";
+		$db ="";
 		$username ="root";
 		$password ="";
 		

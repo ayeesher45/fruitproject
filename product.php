@@ -34,16 +34,16 @@
                             </i></div>
                         <ul id="ul-mobile">
                             <li> <i class="fa fa-home"></i>
-                                <a href="index.html">HOME</a>
+                                <a href="home.php">HOME</a>
                             </li>
                             <li><i class="fa fa-history"></i>
-                                <a href="about.html">ABOUT</a>
+                                <a href="about.php">ABOUT</a>
                             </li>
                             <li> <i class="fa fa-phone"></i>
-                                <a href="contact.html">CONTACT</a>
+                                <a href="contact.php">CONTACT</a>
                             </li>
                             <li> <i class="fa-solid fa-shopping-basket"></i>
-                                <a href="order.html">ORDER</a>
+                                <a href="order.php">ORDER</a>
                             </li>
                         </ul>
                     </div>

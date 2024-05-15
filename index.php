@@ -1,3 +1,58 @@
+<?php
+require_once 'connection-folder/connection.php';
+
+session_start();
+
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+    header("Location: admin-dashboard.php");
+    exit();
+} elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
+    header("Location: home.php");
+    exit();
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    // $hashed_password = md5($password);
+    //echo($hashed_password);
+   // exit();
+
+    try {
+        $stmt = $conn->prepare("SELECT users.id, users.username, users.password, roles.role_name FROM users, roles WHERE users.role_id=roles.id and users.username=:username AND users.password=:password");
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $users = $user['password'];
+        ///var_dump($user);
+        //die();
+        if ($user) {
+            if ($password = $user['password']) {
+            //if (password_verify($password, $user['password'])) {
+                $_SESSION['username'] = $username;
+                $_SESSION['role'] = $user['role_name'];
+                
+                if ($user['role_name'] == 'admin') {
+                    header("Location: admin-dashboard.php");
+                    exit();
+                } elseif ($user['role_name'] == 'user') {
+                    header("Location: home.php");
+                    exit();
+                }
+            } else {
+                $error = "Invalid password.";
+            }
+        } else {
+            $error = "User not found.";
+        }
+    } catch (PDOException $e) {
+        $error = "Connection failed: " . $e->getMessage();
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,25 +80,7 @@
                             <h1>Halie&Ayeesha</h1>
                         </div>
                     </div>
-                    <div  id="nav-mobile">
-                        <div class="barr"><i class="fa fa-bars">
-                            </i></div>
-                        <ul id="ul-mobile">
-                            <li> <i class="fa fa-home"></i>
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li><i class="fa fa-history"></i>
-                                <a href="about.html">ABOUT</a>
-                            </li>
-                            <li> <i class="fa fa-phone"></i>
-                                <a href="contact.html">CONTACT</a>
-                            </li>
-                            <li> <i class="fa-solid fa-shopping-basket"></i>
-                                <a href="order.html">ORDER</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
+                   
                         
                     </div>
     
@@ -66,17 +103,24 @@
             </div>
             </div>
 <div class="container-fluid signin">
-<form action="" class="signinform">
-    <h1>SIGN-IN</h1><br>
+<form class="signinform" method="POST">
+<center><h1 style="margin-top:1rem; margin-bottom:0">SIGN-IN</h1><br>
+</center>
     <div class="container-fluid p-2 info_content">
         <label>Username: </label>
-        <input type="text" name="username">
+        <input type="text" name="username" placeholder="Enter Username" id="username" required>
     </div>
     <div class="container-fluid p-2 info_content">
         <label>Password: </label>
-        <input type="password" name="password">
+        <input type="password" name="password" placeholder="Enter Password" required>
     </div>
-<div class="but1"><button> <a href="order.html">Sign-in</a></button>
+    <div class="btn" >
+      <button style = "border:none; border-radius:2rem; background-color:green;">  <input style =" color:white;"class="btn" type="submit" value="Login"><a href="home.php"></a></button>
+    </div>
+    <span>dont have an account </span> <a href="signup.php" style = "color:white; font-size:.8rem; text-decoration:none; background-color:green; border-radius:2rem; padding:.3rem;"> signup</a>
+
+    
+<!-- <div class="but1"><button><input type="submit" value="Login"></button> -->
 </div>
 </form>
 </div>

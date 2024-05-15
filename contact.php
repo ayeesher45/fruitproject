@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d3c9fc67a3.js" crossorigin="anonymous"></script>
-   
-    <title>sign-up</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/d3c9fc67a3.js" crossorigin="anonymous"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>CONTACT US</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/d3c9fc67a3.js" crossorigin="anonymous"></script>
+   <link href="css/bootstrap.min.css" rel="stylesheet" >
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="product.css">
 </head>
 <body>
     <div class="container-fluid p-0">
@@ -29,59 +29,58 @@
                             </i></div>
                         <ul id="ul-mobile">
                             <li> <i class="fa fa-home"></i>
-                                <a href="index.html">HOME</a>
+                                <a href="home.php">HOME</a>
                             </li>
                             <li><i class="fa fa-history"></i>
-                                <a href="about.html">ABOUT</a>
+                                <a href="about.php">ABOUT</a>
                             </li>
                             <li> <i class="fa fa-phone"></i>
-                                <a href="contact.html">CONTACT</a>
+                                <a href="contact.php">CONTACT</a>
                             </li>
                             <li> <i class="fa-solid fa-shopping-basket"></i>
-                                <a href="order.html">ORDER</a>
+                                <a href="order.php">ORDER</a>
                             </li>
                         </ul>
                     </div>
-            <div>
-
-            </div>
             </div>
             </form>
         </header>
-<div class="container-fluid form1">
-    <div>
-        <form action="" class="signup">
-            <h1>SIGN-UP</h1>
-            <div class="info-cont">
-                <label for="">Fullname:</label>
-                <input type="text" required>
-            </div>
-            <div class="info-cont">
-                <label for="">Username:</label>
-                <input type="text" required>
-            </div>
-            <div class="info-cont">
-                <label for="">Phone-N0:</label>
-                <input type="text" required>
-            </div>
-            <div class="info-cont">
-                <label for="">Address:</label>
-                <input type="text" required>
-            </div>
-            <div class="info-cont">
-                <label for="">Password:</label>
-                <input type="text" required>
-            </div>
-            <div class="info-cont">
-                <label for="">ComfirmPassword:</label>
-                <input type="text" required>
-            </div>
-            <div class="signup-btn">
-                <button><a href="signin.html"></a>Sign-up</button>
-            </div>
-            <p id="sign-p" >Already have an account <a href="signin.html">Sign-in</a></p>
-        </form>
+    <div class="container-fluid p-0 image">
+        <img src="fruithome.jpg" alt="">
+        <h1>CONTACT US</h1>
     </div>
+    <div class="container images">
+        <img src="con2.webp" alt=""></div>
+    <div class="container contact">
+        <div class="container  cont">
+            <h1><i class="fa fa-phone"></i> Phone Number</h1>
+            <p>+2349020349012</p> 
+            <p>+2348170963467</p>
+            <p>+2349098377654</p>
+        </div>
+        <div class="container cont">
+            <h1> <i class="fa fa-whatsapp"></i> Whatsapp Number</h1>
+            <p>+2349034567823</p>
+            <p>+2347065435243</p>
+        </div>
+        <div class="container cont">
+            <h1><i class="fa fa-instagram"></i> Instagram</h1>
+            <p>@Halie&Ayeesha</p>
+        </div>
+        <div class="container cont">
+            <h1><i class="fa fa-house"></i> Address</h1>
+            <p>No 8, child avenue, Apapa, Lagos State.</p>  
+        </div>
+        <div class="container cont">
+            <h1><i class="fa fa-location"></i> Branch</h1>
+            <p>No 3, Aloba, Agege, Lagos State.</p><br>
+            <p>No 234, Aleiru, Kebbi State.</p>
+        </div>
+        <div class="container cont">
+            <h1><i class="fa fa-at"></i> Email</h1>
+            <p>aishazakariyya234@gmail.com</p><br>
+            <p>halimaoyedola345@gmail.com</p>
+        </div>
     </div>
     <footer class="container-fluid foot">
         <div class="foot-bar">
@@ -120,7 +119,7 @@
         <div class="copyright">
             <p>Copyright&copy;2023</p> 
         </div>  
-        </footer>
+    </footer>
     </div>
 
     <script>
@@ -138,4 +137,5 @@
         });
     </script>
 </body>
+<script src="app.js"></script>
 </html>
