@@ -7,7 +7,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
     header("Location: admin-dashboard.php");
     exit();
 } elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'user') {
-    header("Location: home.php");
+    header("Location: index.html");
     exit();
 }
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     header("Location: admin-dashboard.php");
                     exit();
                 } elseif ($user['role_name'] == 'user') {
-                    header("Location: home.php");
+                    header("Location: index.html");
                     exit();
                 }
             } else {
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="password" name="password" placeholder="Enter Password" required>
     </div>
     <div class="btn" >
-      <button style = "border:none; border-radius:2rem; background-color:green;">  <input style =" color:white;"class="btn" type="submit" value="Login"><a href="home.php"></a></button>
+      <button style = "border:none; border-radius:2rem; background-color:green;">  <input style =" color:white;"class="btn" type="submit" value="Login"><a href="index.html"></a></button>
     </div>
     <span>dont have an account </span> <a href="signup.php" style = "color:white; font-size:.8rem; text-decoration:none; background-color:green; border-radius:2rem; padding:.3rem;"> signup</a>
 

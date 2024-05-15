@@ -34,7 +34,7 @@
                             </i></div>
                         <ul id="ul-mobile">
                             <li> <i class="fa fa-home"></i>
-                                <a href="home.php">HOME</a>
+                                <a href="index.html">HOME</a>
                             </li>
                             <li><i class="fa fa-history"></i>
                                 <a href="about.php">ABOUT</a>
